@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-slate-600 h-auto">
+
+    <div class="flex flex-col justify-center items-center h-screen">
+        <h1 class="text-center text-7xl text-white font-bold mb-10">NUMBER GUESSING</h1>
+        <input type="text" id="inputText" placeholder="Guess a number starting from 1-100"
+            class="input input-bordered w-1/3 mb-5" />
+        <button class="btn btn-outline btn-wide btn-active font-bold hover:bg-cyan-400 hover:text-black hover:font-bold"
+            id="sendBtn">SEND</button>
+
+    </div>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="action-modal" class="modal">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold" id="modalTitle"></h3>
+            <p class="py-4 font-bold" id="message"></p>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn btn-neutral">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
